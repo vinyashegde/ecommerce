@@ -1,6 +1,6 @@
  # ecommerce-test
 
-Learn how to contribute
+Learn how to contribute.
 
 https://docs.github.com/en/get-started/quickstart/contributing-to-projects
 
