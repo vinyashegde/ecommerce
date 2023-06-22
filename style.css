@@ -7,34 +7,48 @@
     font-family: Poppins, sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
 }
 
-h2{
+h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: #222;
 }
 
-h6{
+h6 {
     font-weight: 700;
     font-size: 12px;
 }
 
-.section-p1{
+.section-p1 {
     padding: 40px 80px;
 }
 
-.section-m1{
+.section-m1 {
     width: 100%;
+    margin: 60px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #c191b0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 
 #header {
@@ -108,15 +122,15 @@ h6{
     justify-content: center;
 }
 
-#hero h4{
+#hero h4 {
     padding-bottom: 15px;
 }
 
-#hero h1{
-    color:#088178
+#hero h1 {
+    color: #088178
 }
 
-#hero button{
+#hero button {
     background-image: url("buttons/button.png");
     background-color: transparent;
     color: #088178;
@@ -127,7 +141,8 @@ h6{
     font-weight: 700;
     font-size: 15px;
 }
-#feature{
+
+#feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,30 +160,32 @@ h6{
 }
 
 
-#feature .fe-box{
+#feature .fe-box {
     box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.06);
 
 }
-#feature .fe-box img{
+
+#feature .fe-box img {
     width: 100%;
     margin-bottom: 10px;
 }
-#feature .fe-box h6{
-    display:inline-block;
+
+#feature .fe-box h6 {
+    display: inline-block;
     padding: 9px 8px 6px 8px;
     line-height: 1;
-    border-radius:4px;
-    color:#088178;
-    background-color:bisque;
+    border-radius: 4px;
+    color: #088178;
+    background-color: bisque;
 }
 
-#product1{
+#product1 {
     margin-top: 20px;
     text-align: center;
     height: 120vh;
 }
 
-#product1 .pro-container{
+#product1 .pro-container {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -191,10 +208,10 @@ h6{
 #product1 .pro::before {
     content: "";
     position: absolute;
-    top: 5px;  
-    left: 5px;  
-    right: 5px;  
-    bottom: 5px;  
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
 }
@@ -208,29 +225,31 @@ h6{
     height: auto;
     border-radius: 20px;
 }
-#product1 .pro .des{
+
+#product1 .pro .des {
     text-align: start;
     padding: 10px 0;
 }
+
 #product1 .pro .des span {
     color: #606063;
     font-size: 12px;
 }
 
-#product1 .pro .des h5{
+#product1 .pro .des h5 {
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
 }
 
-#product1 .pro .des h4{
+#product1 .pro .des h4 {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
     color: #088178;
 }
 
-#product1 .pro .cart{
+#product1 .pro .cart {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -244,5 +263,38 @@ h6{
     right: 10px;
 }
 
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
 
+}
 
+#banner h4 {
+    color: rgb(219, 69, 94);
+    font-size: 20px;
+
+}
+
+#banner h2 {
+    color: rgb(219, 69, 94);
+    font-size: 40px;
+    padding: 10px 0;
+
+}
+#banner h2 span  {
+    color: #222;
+
+}
+#banner button:hover{
+
+    background: #000000;
+    color: #ffffff;
+}
