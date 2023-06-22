@@ -87,8 +87,9 @@ h6{
 
 }
 
-img {
+.logo {
     height: 50px;
+    width: auto;
 }
 
 
