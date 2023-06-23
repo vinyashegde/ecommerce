@@ -38,7 +38,7 @@ h6 {
     margin: 60px 0;
 }
 
-button.normal{
+button.normal {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -50,6 +50,19 @@ button.normal{
     outline: none;
     transition: 0.2s;
 }
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color:#000000;
+    background-color:transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.2s;
+}
+
 
 #header {
     display: flex;
@@ -289,12 +302,61 @@ button.normal{
     padding: 10px 0;
 
 }
-#banner h2 span  {
+
+#banner h2 span {
     color: #222;
 
 }
-#banner button:hover{
+
+#banner button:hover {
 
     background: #000000;
     color: #ffffff;
 }
+
+#sm-banner {
+
+
+    display: flex;
+
+    justify-content: flex-end;
+
+
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url(images/image11.jpeg);
+    width: 580%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+
+#sm-banner .button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+#sm-banner h4{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: #924c4c;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
