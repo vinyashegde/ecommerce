@@ -50,12 +50,13 @@ button.normal {
     outline: none;
     transition: 0.2s;
 }
-button.white{
+
+button.white {
     font-size: 13px;
     font-weight: 600;
     padding: 11px 18px;
-    color:#000000;
-    background-color:transparent;
+    color: #000000;
+    background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid black;
@@ -81,11 +82,12 @@ button.white{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
 }
 
 #navbar li {
     list-style: none;
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative;
 }
 
@@ -111,13 +113,29 @@ button.white{
     position: absolute;
     bottom: -4px;
     left: 20px;
-
 }
 
 .logo {
     height: 50px;
     width: auto;
 }
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    order: 1; /* Add this line */
+    margin-right: 10px; /* Add this line */
+}
+
+#navbar-wrapper {
+    display: flex;
+}
+
+
 
 
 /* Home Page */
@@ -338,24 +356,27 @@ button.white{
     background: #000000;
     color: #ffffff;
 }
-#sm-banner h4{
+
+#sm-banner h4 {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
 }
-#sm-banner h2{
+
+#sm-banner h2 {
     color: #000000;
     font-size: 28px;
     font-weight: 800;
 }
-#sm-banner span{
+
+#sm-banner span {
     color: #924c4c;
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 15px;
 }
 
-#banner3{
+#banner3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -363,7 +384,7 @@ button.white{
     margin-top: 40px;
 }
 
-#banner3 .banner-box{
+#banner3 .banner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,29 +398,29 @@ button.white{
     margin-bottom: 20px;
 }
 
-#banner3 .banner-box2{
-    background-image:url("images/freeshipping.jpg") ;
+#banner3 .banner-box2 {
+    background-image: url("images/freeshipping.jpg");
     margin-left: 45px;
 }
 
-#banner3 .banner-box3{
+#banner3 .banner-box3 {
     background-image: url(images/happysell.jpg);
     margin-left: 45px;
 }
 
-#banner3 h2{
+#banner3 h2 {
     color: #fff;
     font-weight: 900;
     font-size: 22px;
 }
 
-#banner h3{
+#banner h3 {
     color: #ec544e;
     font-weight: 800;
     font-size: 15px;
 }
 
-#newsletter{
+#newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -410,28 +431,28 @@ button.white{
     background-color: #041e42;
 }
 
-#newsletter h4{
+#newsletter h4 {
     font-size: 14px;
     font-weight: 700;
-    color:#fff;
+    color: #fff;
 }
 
-#newsletter p{
+#newsletter p {
     font-size: 14px;
     font-weight: 600;
     color: #818ea0;
 }
 
-#newsletter p span{
+#newsletter p span {
     color: #ffbd27;
 }
 
-#newletter .form{
+#newletter .form {
     display: flex;
     width: 40%;
 }
 
-#newsletter input{
+#newsletter input {
     height: 3.125rem;
     padding: 0 1.25em;
     font-size: 14px;
@@ -443,7 +464,7 @@ button.white{
     border-bottom-right-radius: 0;
 }
 
-#newsletter button{
+#newsletter button {
     background-color: #088178;
     color: #fff;
     white-space: nowrap;
@@ -451,233 +472,265 @@ button.white{
 }
 
 
-footer{
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-footer .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.footer-section {
+    flex-basis: 25%;
     margin-bottom: 20px;
-
 }
 
-footer .logo{
-    margin-bottom: 30px;
-} 
-
-footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-
-footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-}
-
-footer a{
-    font-size: 22px;
-    text-decoration: none;
-    color: #222;
+h3 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-footer .follow{
-    margin-top: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-footer .follow i{
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
+.social-media li,
+.about-links li,
+.account-links li {
+    margin-bottom: 5px;
 }
 
-footer .install .row img{
-    border: 1px solid #088178;
-    border-radius: 6px;
+.social-media a,
+.about-links a,
+.account-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-footer .install img{
-    margin: 10px 0 15px 0;
-}
-footer .follow i:hover,
-footer a:hover {
-    color: #088178;
+.social-media a:hover,
+.about-links a:hover,
+.account-links a:hover {
+    color: #bbb;
 }
 
-footer .copyright{
-    width: 100%;
-    text-align: center;
+.app-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
-@media (max-width:799px) {
-    
 
-    #navbar{
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:flex-start;
-        position:fixed;
-        top:0;
-        right:-300px;
-        height:100vh;
-        width:300px;
-        background-color: #f4f7f5;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
-        padding: 80px 0 0 10px;
-        transition:0.3s;
+.app-button i {
+    margin-right: 5px;
+}
+
+.app-button:hover {
+    background-color: #eee;
+}
+
+
+@media (max-width:768px) {
+
+    #menu-toggle {
+        display: block;
     }
-    #navbar.active{
-        right:0px;
 
+    #navbar {
+        flex-direction: column;
+        display: none;
+    }
 
+    #navbar.open {
+        display: block;
     }
-    #navbar li{
-        margin-bottom:25px;
+
+    #navbar li {
+        padding: 10px 0;
+        text-align: center;
     }
+
     #mobile {
-        display:flex;
-        align-items:centre;
-    
+        display: flex;
+        align-items: centre;
+
 
 
     }
-    #mobile i{
-        color:#000000;
+
+    #mobile i {
+        color: #000000;
         font-size: 24px;
         padding-left: 20px;
 
     }
-    #close{
+
+    #close {
         position: absolute;
         top: 30px;
-        left:30 px;
-        color:#040000;
+        left: 30 px;
+        color: #040000;
         font-size: 24px;
     }
-    #lg-bag{
-        display:none;
+
+    #lg-bag {
+        display: none;
 
     }
+
     #hero {
-        
+
         height: 90vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
-        
+
     }
-    #feature{
+
+    #feature {
         justify-self: centre;
 
     }
-    
-#feature .fe-box {
-    
-    margin: 15px 15px;
-}
-#product1 .pro-container {
-    
-    justify-content: center;
-    
-    
-}
-#product1 .pro {
-    
-    margin-left: 15px;
-    
-}
-#banner{
-    height:20vh;
+
+    #feature .fe-box {
+
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+
+        justify-content: center;
+
+
+    }
+
+    #product1 .pro {
+
+        margin-left: 15px;
+
+    }
+
+    #banner {
+        height: 20vh;
+
+    }
+
+    #sm-banner .banner-box {
+
+        min-width: 100%;
+        height: 30vh;
+
+        padding: 30px;
+
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .bannerbox {
+        min-width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+    .footer-section {
+        flex-basis: 50%;
+    }
+
+    .app-button {
+        display: block;
+        margin-top: 10px;
+    }
 
 }
-#sm-banner .banner-box {
-    
-    min-width: 100%;
-    height: 30vh;
-    
-    padding: 30px;
 
-}
-#banner3{
-    padding: 0 40px;
-}
-#banner3 .bannerbox{
-    min-width: 28%;
-}
-#newsletter .form{
-    width: 70%;
-}
-}
 @media (max-width:477px) {
-    
-
-.section-p1{
-    padding: 20px;
-}
-#header{
-    padding: 10px 30px;
-}
-h1{
-    font-size:38px ;
-}
-h2{
-    font-size: 32px;
-}
-#hero{
-    padding: 0 20px;
-    background-position: 55% ;
-}
-#feature{
-    justify-content: space-between;
-}
-#feature .fe-box {
-    width: 155px;
-    margin:0 0 15px 0;
-}
-#product .pro{
-    width:100%
-}
-#banner{
-    height: 40vh;
-}
-#sm-banner .banner-box{
-    height:40vh;
-
-}
-#sm-banner .banner-box2{
-    margin-top: 20px;
-}
-#banner3{
-    padding:0 20px;
-
-}
-#banner .banner-box{
-    width:100%;
-
-}
-#newsletter{
-    padding: 40px 20px;
-}
-#newsletter .form{
-    width: 100%;
-
-}
-footer .copyright{
-    text-align:start;
-}
-}
 
 
+    .section-p1 {
+        padding: 20px;
+    }
 
+    #header {
+        padding: 10px 30px;
+    }
 
+    h1 {
+        font-size: 38px;
+    }
 
+    h2 {
+        font-size: 32px;
+    }
 
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
 
-    
-    
+    #feature {
+        justify-content: space-between;
+    }
 
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
 
+    #product .pro {
+        width: 100%
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+
+    }
+
+    #banner .banner-box {
+        width: 100%;
+
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+
+    }
+
+}

@@ -9,22 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-eSIc8cJGtZnGOxvF1q5bWTC6j3FbHyHTbn5TujQ95N/z/NguEl7XgTInHr0x8eJDMghX9jp3U/5WzqTQa+5ncg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <section id="header">
         <a href="#"><img src="logos/logo.png" class="logo" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="new.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+        <button id="menu-toggle">&#9776;</button>
+        <div id="navbar-wrapper">
+          <ul id="navbar">
+            <li><a class="active" href="new.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
         </div>
-    </section>
+      </section>
+      
+      
 
     <section id="hero">
         <h4>Trade-in_Offer</h4>
@@ -531,7 +535,7 @@
     </div>
 </section>
 
-<footer class="section-p1">
+<!-- <footer class="section-p1">
     <div class="col">
         <img class="logo" src="logos/logo.png" alt="">
         <h4>Contact</h4>
@@ -586,7 +590,44 @@
     </div>
 
 
-</footer>
+</footer> -->
+
+<footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul class="about-links">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>My Account</h3>
+          <ul class="account-links">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Install Our App</h3>
+          <a href="#" class="app-button"><i class="fab fa-google-play"></i> Google Play</a>
+          <a href="#" class="app-button"><i class="fab fa-apple"></i> App Store</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
 
 </section>
 
